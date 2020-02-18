@@ -452,7 +452,7 @@ void scrollingMenu() {
 			printRestaurant(screenNum*21 + i);
 		}
 	} else if (selectedRest == -1 && v < JOY_CENTRE - JOY_DEADZONE) {
-		if (selectedRest != 0) {
+		if (screenNum != 0) {
 			tft.fillScreen(TFT_BLACK);
 			selectedRest = 20;
 			screenNum--;
